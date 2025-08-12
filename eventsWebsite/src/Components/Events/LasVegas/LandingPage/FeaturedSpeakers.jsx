@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 // Asset Imports
 // NOTE: Ensure these paths correctly point to your image files.
 import AndrewNgImage from '../../../../assets/Backgrounds/Andrew.png';
@@ -90,7 +90,7 @@ const FeaturedSpeakers = () => {
         <button 
           className="mt-24 px-8 py-3 bg-blue-600 text-white text-xl font-semibold rounded-lg shadow-lg shadow-blue-500/50 transition-transform hover:scale-105"
         >
-          Explore Speakers
+         <Link to="/las-vegas/speakers">Explore Speakers</Link>
         </button>
       </div>
     </div>

@@ -171,11 +171,11 @@ const DownloadButton = () => (
 const ToBeCovered = () => {
     return (
         <div className="min-h-screen bg-black bg-opacity-78 text-slate-50 font-sans p-3 sm:p-4 md:p-6 lg:p-8">
-            <div className="container mx-auto max-w-7xl">
+            <div className="container mx-auto max-w-7xl" id='agenda-section'>
                 {/* Header */}
                 <header className="w-full text-center border border-slate-50 rounded-2xl sm:rounded-3xl py-8 sm:py-10 md:py-12 mb-8 sm:mb-12 md:mb-16 px-4">
                     <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
-                        Summit Agenda – August 3, 2025
+                        Summit Agenda – August 30, 2025
                     </h1>
                 </header>
 

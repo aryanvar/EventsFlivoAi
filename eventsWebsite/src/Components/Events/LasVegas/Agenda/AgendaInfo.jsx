@@ -50,9 +50,9 @@ const AgendaInfo = () => {
                 An exclusive in-person event by FlivoAI
               </p>
               <div className="flex flex-col md:flex-row items-center gap-4 mt-4 text-lg md:text-xl font-semibold text-slate-300">
-                <span>August 3, 2025</span>
+                <span>August 30, 2025</span>
                 <div className="hidden md:block w-px h-5 bg-slate-50" />
-                <span>McCormick Place Convention Center, Chicago</span>
+                <span>McCormick Place Convention Center, Las Vegas</span>
               </div>
             </div>
           </InfoCard>

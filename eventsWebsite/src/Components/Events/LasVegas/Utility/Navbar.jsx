@@ -18,6 +18,14 @@ const Navbar = ({
     setIsMobileMenuOpen(false);
   };
 
+  // Function to scroll to top smoothly when navigating
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <header className={`w-full mb-8 ${className}`}>
       <div className="flex items-center justify-between px-4 py-4 lg:px-6">
@@ -33,6 +41,7 @@ const Navbar = ({
               <li key={item}>
                 <Link
                   to={`/las-vegas/${item.toLowerCase()}`}
+                  onClick={scrollToTop}
                   className={`block rounded-full px-3 py-2 text-base font-semibold transition-colors duration-300 lg:px-4 lg:text-lg xl:text-xl ${
                     activeItem === item
                       ? 'bg-slate-50 text-gray-800'
@@ -70,7 +79,10 @@ const Navbar = ({
               <li key={item}>
                 <Link
                   to={`/las-vegas/${item.toLowerCase()}`}
-                  onClick={closeMobileMenu}
+                  onClick={() => {
+                    closeMobileMenu();
+                    scrollToTop();
+                  }}
                   className={`block rounded-lg px-4 py-3 text-lg font-semibold transition-colors duration-300 ${
                     activeItem === item
                       ? 'bg-slate-50 text-gray-800'

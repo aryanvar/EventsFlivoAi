@@ -35,6 +35,17 @@ const TextGlow = ({ children, className = '', as = 'div', hasGradient = false })
 
 const EnterpriseAISummit = () => {
 
+  // Smooth scroll to tickets section
+  const scrollToTickets = () => {
+    const ticketsSection = document.getElementById('tickets-section');
+    if (ticketsSection) {
+      ticketsSection.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  };
+
 
   const galleryImages = [
     { src: LeftImg, alt: 'Aerial view of Las Vegas skyscrapers' },
@@ -67,7 +78,7 @@ const EnterpriseAISummit = () => {
         <main className="flex flex-grow flex-col items-center justify-center relative">
           {/* Date and Time Section - Positioned at top */}
           <div className="absolute top-0 left-0 right-0 flex w-full max-w-5xl mx-auto items-center justify-between px-4 mb-8">
-            <p className="font-semibold text-slate-300 text-lg md:text-xl">August 31, 2025</p>
+            <p className="font-semibold text-slate-300 text-lg md:text-xl">August 30, 2025</p>
             <p className="font-semibold text-slate-300 text-lg md:text-xl">9am - 6pm GMT</p>
           </div>
 
@@ -141,7 +152,7 @@ const EnterpriseAISummit = () => {
     style={{ 
       boxShadow: '0px 0px 30px 0px rgba(59, 130, 246, 0.6), inset 0px 1px 0px rgba(255, 255, 255, 0.2)' 
     }}
-    onClick={() => console.log('Register now clicked')}
+    onClick={scrollToTickets}
   >
     Register now
   </button>

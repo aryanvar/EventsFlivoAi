@@ -80,7 +80,7 @@ const Faq = () => {
         <main className="flex flex-grow flex-col items-center justify-center relative">
           {/* Date and Time Section - Positioned at top */}
           <div className="absolute top-0 left-0 right-0 flex w-full max-w-5xl mx-auto items-center justify-between px-4 mb-8">
-            <p className="font-semibold text-slate-300 text-lg md:text-xl">August 31, 2025</p>
+            <p className="font-semibold text-slate-300 text-lg md:text-xl">August 30, 2025</p>
             <p className="font-semibold text-slate-300 text-lg md:text-xl">9am - 6pm GMT</p>
           </div>
 

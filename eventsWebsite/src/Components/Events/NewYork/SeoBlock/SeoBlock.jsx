@@ -68,16 +68,15 @@ const SeoBlock = () => {
             {/* Location Details */}
             <div className="text-left relative z-10">
               <h2 className="text-2xl sm:text-3xl font-bold">
-                San Fransisco Mascon Center
+                Javits Center, New York City
               </h2>
               <p className="mt-1 text-base sm:text-lg text-slate-300 font-medium">
-                Mascon Centre
+                Javits Center
                 <br/>
-                San Francisco, California
+                New York City, New York
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>

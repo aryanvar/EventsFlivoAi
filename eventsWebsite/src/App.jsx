@@ -1,4 +1,5 @@
-import { Routes ,Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 import "./App.css";
 
@@ -71,6 +72,13 @@ import BengaluruFaqRenderIng from "./Components/Events/Bengaluru/FAQ/FaqRenderIn
 
 
 function App() {
+  const location = useLocation();
+
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <>
       <Routes>

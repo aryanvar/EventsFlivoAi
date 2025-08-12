@@ -102,7 +102,7 @@ const Tickets = () => {
   const cardIdle = "border-gray-100 dark:border-gray-800";
 
   return (
-    <div className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-tr from-gray-100 via-gray-50 to-gray-200 dark:from-gray-950 dark:to-gray-900 relative overflow-hidden min-h-screen">
+    <div id="tickets-section" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-tr from-gray-100 via-gray-50 to-gray-200 dark:from-gray-950 dark:to-gray-900 relative overflow-hidden min-h-screen">
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-extrabold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-900/90 via-cyan-800/80 to-indigo-700/80 dark:from-white dark:via-cyan-200 dark:to-indigo-200">

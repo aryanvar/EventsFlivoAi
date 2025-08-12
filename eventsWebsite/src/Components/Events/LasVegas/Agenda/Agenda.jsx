@@ -20,6 +20,9 @@ const TextGlow = ({ children, className = '', as = 'div', hasGradient = false })
       }
     : {};
 
+
+
+
   return (
     <Tag className={`relative font-semibold text-center text-slate-50 ${className}`}>
       {/* Blurred background layer */}
@@ -40,7 +43,16 @@ const Agenda = () => {
     { src: Agenda2, alt: 'Main Event Timeline' },
     { src: Agenda3, alt: 'Workshop Sessions' },
   ];
-
+      // Smooth scroll to agenda section
+  const scrollToAgenda = () => {
+    const agendaSection = document.getElementById('agenda-section');
+    if (agendaSection) {
+      agendaSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
   return (
     <div
       className="relative min-h-screen w-full overflow-hidden bg-[#0f0f0f] font-sans text-slate-50"
@@ -80,7 +92,7 @@ const Agenda = () => {
         <main className="flex flex-grow flex-col items-center justify-center relative">
           {/* Date and Time Section - Positioned at top */}
           <div className="absolute top-0 left-0 right-0 flex w-full max-w-5xl mx-auto items-center justify-between px-4 mb-8">
-            <p className="font-semibold text-slate-300 text-lg md:text-xl">August 31, 2025</p>
+            <p className="font-semibold text-slate-300 text-lg md:text-xl">August 30, 2025</p>
             <p className="font-semibold text-slate-300 text-lg md:text-xl">9am - 6pm GMT</p>
           </div>
 
@@ -155,7 +167,7 @@ const Agenda = () => {
                   style={{
                     boxShadow: '0px 0px 30px 0px rgba(59, 130, 246, 0.6), inset 0px 1px 0px rgba(255, 255, 255, 0.2)',
                   }}
-                  onClick={() => console.log('View Full Agenda clicked')}
+                  onClick={scrollToAgenda}
                 >
                   View Full Agenda
                 </button>

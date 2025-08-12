@@ -6,7 +6,7 @@ import FirstImg from '../../../../assets/Backgrounds/FirstImg.png';
 import SecImg from '../../../../assets/Backgrounds/SecImg.png';
 import ThirdImg from '../../../../assets/Backgrounds/ThordImg.png';
 import FourthImg from '../../../../assets/Backgrounds/FouthImg.png';
-
+import {Link} from 'react-router-dom';
 // Data for the agenda
 const agendaColumns = [
   { // Column 1
@@ -106,7 +106,7 @@ export default function AgendaPreview() {
         
         {/* Responsive button */}
         <button className="mt-8 sm:mt-12 md:mt-16 font-roboto text-lg sm:text-xl md:text-2xl font-bold text-white bg-gradient-to-r from-blue-500 to-blue-700 py-3 px-6 sm:py-4 sm:px-8 rounded-lg transition-transform hover:scale-105 shadow-[0_0_24px_rgba(59,130,246,0.5)] w-full max-w-xs sm:max-w-none sm:w-auto">
-          Explore Event Agenda
+          <Link to="/las-vegas/agenda">Explore Event Agenda</Link>
         </button>
 
       </div>
